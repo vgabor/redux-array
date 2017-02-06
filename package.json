@@ -1,0 +1,43 @@
+{
+  "name": "redux-list",
+  "version": "1.0.0",
+  "description": "Redux middleware to dispatch lists of actions",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vgabor/redux-list"
+  },
+  "bugs": {
+    "url": "https://github.com/vgabor/redux-list/issues"
+  },
+  "keywords": [
+    "redux",
+    "middleware",
+    "dispatch",
+    "list"
+  ],
+  "authors": [
+    "Gabor Vizi <vgabor@vgabor.com> (https://vgabor.com)"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "build": "eslint src && babel src -d lib",
+    "lint": "eslint src",
+    "test": "jest src/*"
+  },
+  "jest": {
+    "verbose": true
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-plugin-transform-object-rest-spread": "^6.22.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-es2016": "^6.22.0",
+    "babel-preset-es2017": "^6.22.0",
+    "eslint": "^3.14.1",
+    "jest": "^18.1.0",
+    "redux": "^3.6.0"
+  }
+}
