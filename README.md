@@ -1,8 +1,8 @@
-# redux-list
-Redux middleware to dispatch lists of actions
+# redux-array
+Redux middleware to dispatch array of actions
 
-[![build status](https://img.shields.io/travis/vgabor/redux-list/master.svg)](https://travis-ci.org/vgabor/redux-list)
-[![npm version](https://img.shields.io/npm/v/redux-list.svg)](https://www.npmjs.com/package/redux-list)
+[![build status](https://img.shields.io/travis/vgabor/redux-array/master.svg)](https://travis-ci.org/vgabor/redux-array)
+[![npm version](https://img.shields.io/npm/v/redux-array.svg)](https://www.npmjs.com/package/redux-array)
 
 ## Table of Contents
 * [Install](#install)
@@ -11,23 +11,23 @@ Redux middleware to dispatch lists of actions
 
 ## Install
 
-Installing redux-list npm package via npm or yarn:  
+Installing redux-array npm package via npm or yarn:
 ```
-$ npm install --save redux-list
-$ yarn add redux-list
+$ npm install --save redux-array
+$ yarn add redux-array
 ```
 
 Import and usage in your code:
 
 ```javascript
 import { createStore, applyMiddleware, combineReducers } from 'redux';
-import reduxList from 'redux-list';
+import reduxArray from 'redux-array';
  
 import * as reducers from './reducers';
  
 const rootReducer = combineReducers(reducers);
 const middlewares = applyMiddleware(
-  reduxList
+  reduxArray
 );
  
 const store = createStore(roorReducer, middlewares);
@@ -58,7 +58,7 @@ store.dispatch([
 ]);
 ```
 #### Pending updates
-If you want pending updates, it very easy to do with redux-list.
+If you want pending updates, it very easy to do with redux-array.
 
 ```javascript
 store.dispatch([

@@ -1,7 +1,7 @@
 jest.autoMockOff();
 
 import { createStore, applyMiddleware } from 'redux';
-import reduxList from './index';
+import reduxArray from './index';
 
 describe('redux full integration', () => {
   it('reducer receives correct actions', () => {
@@ -9,7 +9,7 @@ describe('redux full integration', () => {
     const foo = () => (next) => (action) => {calls.push({middleware: "foo", action}); return next(action)};
     const bar = () => (next) => (action) => {calls.push({middleware: "bar", action}); return next(action)};
     let middlewares = applyMiddleware(
-      foo, reduxList, bar
+      foo, reduxArray, bar
     );
     let reducer = jest.fn();
     let store = createStore(reducer, middlewares);

@@ -1,20 +1,21 @@
 {
-  "name": "redux-list",
+  "name": "redux-array",
   "version": "1.0.0",
-  "description": "Redux middleware to dispatch lists of actions",
+  "description": "Redux middleware to dispatch array of actions",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vgabor/redux-list"
+    "url": "https://github.com/vgabor/redux-array"
   },
   "bugs": {
-    "url": "https://github.com/vgabor/redux-list/issues"
+    "url": "https://github.com/vgabor/redux-array/issues"
   },
   "keywords": [
     "redux",
     "middleware",
     "dispatch",
-    "list"
+    "list",
+    "array"
   ],
   "authors": [
     "Gabor Vizi <vgabor@vgabor.com> (https://vgabor.com)"
