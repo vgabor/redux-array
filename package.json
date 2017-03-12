@@ -1,6 +1,6 @@
 {
   "name": "redux-array",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Redux middleware to dispatch array of actions",
   "main": "lib/index.js",
   "repository": {
